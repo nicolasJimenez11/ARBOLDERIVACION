@@ -56,4 +56,4 @@ Una vez validada la sintaxis, el script recorre el árbol generado y lo traduce 
 
 Como se observa en la captura de ejecución, el programa lee secuencialmente cada línea del archivo operaciones.txt. Durante el proceso, el sistema notifica en tiempo real qué cadena está analizando y confirma la creación exitosa de cada imagen. Esta fase es crucial para asegurar que no existan errores de sintaxis en las expresiones de entrada y que el motor de renderizado esté respondiendo correctamente.
 
-![Ejecución en Consola](Captura%20desde%202026-03-31%2019-17-07.png)
+![Ejecución en Consola](EJECUCION.png)
