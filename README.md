@@ -50,10 +50,28 @@ Una vez validada la sintaxis, el script recorre el árbol generado y lo traduce 
 
 
 
-**RESULTADOS Y PRUEBAS
+**RESULTADOS Y PRUEBAS**
 
 **Ejecucion en consola**
 
 Como se observa en la captura de ejecución, el programa lee secuencialmente cada línea del archivo operaciones.txt. Durante el proceso, el sistema notifica en tiempo real qué cadena está analizando y confirma la creación exitosa de cada imagen. Esta fase es crucial para asegurar que no existan errores de sintaxis en las expresiones de entrada y que el motor de renderizado esté respondiendo correctamente.
 
 ![Ejecución en Consola](EJECUCION.png)
+
+**Archivos Generados**
+
+Tras la ejecución, el programa organiza los resultados en la carpeta de destino. Como se muestra en el repositorio del proyecto, se generaron tres archivos principales: arbol_1.png, arbol_2.png y arbol_3.png. Cada uno de estos archivos corresponde a una de las expresiones procesadas, demostrando la capacidad del software para manejar múltiples casos de manera automatizada.
+
+**Resultados Visuales**
+
+ARBOL 1
+
+![Árbol 1 - Operación Básica](arbol_1.png)
+
+ARBOL 2
+
+![Árbol 2 - Sumas y Restas](arbol_2.png)
+
+ARBOL 3
+
+![Árbol 3 - Uso de Paréntesis](arbol_3.png)
