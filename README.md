@@ -66,12 +66,26 @@ Tras la ejecución, el programa organiza los resultados en la carpeta de destino
 
 ARBOL 1
 
-![Árbol 1 - Operación Básica](arbol_1.png)
+![Árbol 1 - Operación Básica](IMAGEN/arbol1.png)
 
 ARBOL 2
 
-![Árbol 2 - Sumas y Restas](arbol_2.png)
+![Árbol 2 - Sumas y Restas](IMAGEN/arbol2.png)
 
 ARBOL 3
 
-![Árbol 3 - Uso de Paréntesis](arbol_3.png)
+![Árbol 3 - Uso de Paréntesis](IMAGEN/arbol3.png)
+
+
+**ANALISIS**
+
+El análisis de los árboles generados confirma que la gramática respeta estrictamente la jerarquía matemática. Los operadores de menor prioridad, como la suma y la resta, se ubican en la parte superior (raíz), mientras que la multiplicación, la división y los paréntesis se desplazan hacia los niveles inferiores. Esta estructura asegura que, al evaluar el árbol desde las hojas hacia arriba, las operaciones con mayor precedencia se resuelvan primero, eliminando cualquier ambigüedad en el cálculo.
+
+Asimismo, el uso de niveles diferenciados (E, T, F) permite que el programa maneje correctamente tanto valores numéricos como variables. El sistema identifica los paréntesis como factores prioritarios, aislando sub-expresiones que deben procesarse antes de integrarse al resto de la operación. La visualización automática mediante Graphviz valida que cada token ha sido clasificado en su nivel correspondiente, demostrando que el analizador sintáctico interpreta fielmente la lógica de la gramática propuesta.
+
+
+**CONCLUSION**
+
+El desarrollo de este proyecto permitió aplicar de forma práctica los conceptos de análisis sintáctico y gramáticas libres de contexto. Se logró transformar reglas teóricas en un sistema funcional capaz de interpretar operaciones aritméticas respetando su jerarquía lógica. Esto demuestra que el uso de una estructura basada en niveles (E, T y F) es una solución efectiva para eliminar la ambigüedad en el procesamiento de lenguajes.
+
+Además, la integración de Lark con Graphviz resultó ser una herramienta poderosa para la enseñanza de compiladores. La automatización de los árboles visuales no solo facilita la validación de los resultados, sino que permite observar con precisión cómo la computadora "entiende" y organiza cada componente de una expresión. En conclusión, el programa cumple con el objetivo de procesar, analizar y representar gráficamente cualquier operación matemática definida por la gramática.
